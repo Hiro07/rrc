@@ -8,6 +8,7 @@
   
 ## DESCRIPTION
   This command returns a specified return code (exit code).
+  This command may be useful for checking exit codes.
 
 ## EXIT STATUS
   - when no arguments : returns 0
