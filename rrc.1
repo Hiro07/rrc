@@ -1,0 +1,50 @@
+.\"
+.\" Manpage of rrc command
+.\"  Copyright 2023 Hiroyuki Kikuchi (hjfk07@gmail.com)
+.\"
+.\"	@(#)rrc.1
+.\"
+.TH rrc 1 "Janualy 5, 2023"
+.SH NAME
+rrc \- return return code.
+
+.SH SYNOPSIS
+.B rrc
+[
+.I return_code
+]
+.SH DESCRIPTION
+This command returns a specified return code (exit code).
+
+.SH EXIT STATUS
+when no arguments : returns 0
+.PP
+when more than 2 arguments : returns 1
+.PP
+when 1 argument : convert argument to integer and return it as a return code.
+
+.SH EXAMPLES
+.PP
+.RS 6
+$ rrc
+.PP
+$ echo $?
+.RE
+.PP
+Return code is 0. 
+.PP
+.RS 6
+$ rrc 1 2
+.RE
+.PP
+Return code is 1. Because of too many arguments.
+.PP
+.RS 6
+$ rrc -1
+.RE
+.PP
+Return code is -1.
+.PP
+
+.SH AUTHOR
+Hiroyuki Kikuchi (hjfk07@gmail.com)
