@@ -27,7 +27,12 @@
     $ rrc -1
   
   Return code is -1.
-  
+  Note: according to UNIX system, exit code is defined between 0 to 255. See wait(3) and/or wait(2).
+  So using rrc as a child process, this will return 255 instead of -1, it depends on the parent process.
+
+## SEE ALSO
+  wait(3), wait(2)
+
 ## DOWNLOAD
   Executable binaries
     for Apple Silicon Mac (Mach-O 64-bit executable arm64) : <a id="raw-url" href="https://github.com/Hiro07/rrc/releases/latest">Latest Release</a>

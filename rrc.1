@@ -45,6 +45,12 @@ $ rrc -1
 .PP
 Return code is -1.
 .PP
+Note: According to UNIX system, exit code is defined between 0 to 255. See wait(3) and/or wait(2).
+So using rrc as a child process, this will return 255 instead of -1, it depends on the parent process.
+.PP
+
+.SH SEE ALSO
+wait(3), wait(2)
 
 .SH AUTHOR
 Hiroyuki Kikuchi (hjfk07@gmail.com)
