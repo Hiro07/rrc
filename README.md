@@ -40,3 +40,6 @@
 
 ## Copyright
   2023 Hiroyuki Kikuchi (hjfk07@gmail.com)
+
+## MORE DETAILS
+  <a href="https://hilog07.blogspot.com/2023/01/unix-rrc.html">UNIX command A command that returns an arbitrary return code (exit code): rrc</a>
